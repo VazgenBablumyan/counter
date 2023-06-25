@@ -43,7 +43,9 @@ export default class Counter extends Component {
             this.setState({ counter: this.state.counter + num })
         }
     }
-
+    componentDidUpdate = () =>{
+        localStorage.setItem("state", JSON.stringify(this.state))
+    }
     render() {
         return (
             <div className='counter'>
