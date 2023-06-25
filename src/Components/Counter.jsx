@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Counter.css'
-export default class Inputes extends Component {
+export default class Counter extends Component {
     constructor(props) {
         super(props)
     }
